@@ -291,7 +291,6 @@ var species = [
 'Hermit Crab',
 'Heron',
 'Highland Cattle',
-'Himalayan',
 'Hippopotamus',
 'Honey Bee',
 'Horn Shark',
@@ -540,7 +539,6 @@ var species = [
 'Tetra',
 'Thorny Devil',
 'Tibetan Mastiff',
-'Tiffany',
 'Tiger',
 'Tiger Salamander',
 'Tiger Shark',
@@ -631,5 +629,5 @@ var species = [
 'Brachiosaurus',
 'Brontosaurus',
 'Allosaurus',
-'Pheonix'
+'Phoenix'
 ]
