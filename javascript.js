@@ -2,14 +2,14 @@ var colorBox = document.querySelector("#colorBox");
 
 function ranArray(arrayName) {
     var ranArNum = Math.floor(Math.random() * (arrayName.length) + 1);
-    var displayName = arrayName[0] + 'Display';
+    var displayText = document.getElementById(arrayName[0] + 'Display');
 
     if (arrayName[0] == "species") {
         var myUrl = "https://www.google.com/search?hl=en&site=imghp&tbm=isch&source=hp&biw=950&bih=970&q=" + arrayName[ranArNum];
-        document.getElementById('speciesLinkId').href = myUrl;
+        displayText.href = myUrl;
     }
 
-    document.getElementById(displayName).innerHTML = arrayName[ranArNum];
+    displayText.innerHTML = arrayName[ranArNum];
 }
 
 function barGen(divName, backColor, progColor, var1, var2) {
