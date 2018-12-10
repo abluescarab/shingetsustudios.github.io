@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
-    <title>Character Generator</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-  <body onload="generate()">
-    <h1> Character Generator!</h1>
-	
-    <p>Species  <button onclick="ranArray(species)">Refresh</button></p>
-	
-    <a href="#" target="_blank" id="speciesLinkId"><div id="speciesDisplay"> </div></a>
-	
-	<p>Number of Colors!</p><p> <input type="number" id="colorNum" value = 1><button onclick="colorReset()">Gen Colors!</button></p>
-	<ui class="colorBoxContainer">
-	</ui>
-	<br><br><br><br>
-	<p>*Click on a color or bar to change it!</p>
-	
-    <p> Jobs! <button onclick="ranArray(job)">Refresh</button></p>	
-    <div class="jobDisplay" id="jobDisplay"></div><br>
-	
-	<div id="barContainer">
-    <p id="genderText"></p><div class="progressBar" id="gender1" onclick="newGender()"><div class="bar" id="gender2" ></div></div>
+    <head>
+        <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+        <title>Character Generator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body onload="generate()">
+        <h1>Character Generator!</h1>
 
-    <p id="hightText"></p><div class="progressBar" id="hight1" onclick="newHight()"><div class="bar" id="hight2" ></div></div>
-	
-	<p id="weightText"></p><div class="progressBar" id="weight1" onclick="newWeight()"><div class="bar" id="weight2"></div></div>
-	
-	
-    <p id="strengthText"></p><div class="progressBar" id="strength1" onclick="newStrength()"><div class="bar" id="strength2"></div></div>
-		
-    <p id="endowmentText"></p><div class="progressBar" id="endowment1" onclick="newEndowment()"><div class="bar" id="endowment2" ></div></div>
-	
-	
-	<div id="hairStyle">
-	<p> Hair Style! <button onclick="ranArray(hair)">Refresh</button></p>	
-    <div class="hairDisplay" id="hairDisplay"></div>
-	
-	<p id="hairText"></p><div class="progressBar" id="hair1" onclick="newHairLength()"><div class="bar" id="hair2" ></div></div>
-	</div>
-	</div>
-    <br>
-    <button onclick="generate()">Refresh All</button>
-    <script src="javascript.js"></script>
-    <script src="genJob.js"> </script>
-    <script src="genSpecies.js"> </script>
-    <script src="genHair.js"> </script>
-  </body>
+        <p>Species <button onclick="ranArray(species)">Refresh</button></p>
+        <a href="#" target="_blank" id="speciesLinkId">
+            <div id="speciesDisplay"></div>
+        </a>
+
+        <p>Number of Colors!</p>
+        <p><input type="number" id="colorNum" value="1"><button onclick="colorReset()">Gen Colors!</button></p>
+        <ui class="colorBoxContainer">
+        </ui>
+        <br><br><br><br>
+        <p>*Click on a color or bar to change it!</p>
+
+        <p>Jobs! <button onclick="ranArray(job)">Refresh</button></p>
+        <div class="jobDisplay" id="jobDisplay"></div><br>
+
+        <div id="barContainer">
+            <p id="genderText"></p>
+            <div class="progressBar" id="gender1" onclick="newGender()">
+                <div class="bar" id="gender2"></div>
+            </div>
+
+            <p id="heightText"></p>
+            <div class="progressBar" id="height1" onclick="newHeight()">
+                <div class="bar" id="height2"></div>
+            </div>
+
+            <p id="weightText"></p>
+            <div class="progressBar" id="weight1" onclick="newWeight()">
+                <div class="bar" id="weight2"></div>
+            </div>
+
+
+            <p id="strengthText"></p>
+            <div class="progressBar" id="strength1" onclick="newStrength()">
+                <div class="bar" id="strength2"></div>
+            </div>
+
+            <p id="endowmentText"></p>
+            <div class="progressBar" id="endowment1" onclick="newEndowment()">
+                <div class="bar" id="endowment2"></div>
+            </div>
+
+
+            <div id="hairStyle">
+                <p>Hair Style! <button onclick="ranArray(hair)">Refresh</button></p>
+                <div class="hairDisplay" id="hairDisplay"></div>
+
+                <p id="hairText"></p>
+                <div class="progressBar" id="hair1" onclick="newHairLength()">
+                    <div class="bar" id="hair2"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button onclick="generate()">Refresh All</button>
+        <script src="javascript.js"></script>
+        <script src="genJob.js"> </script>
+        <script src="genSpecies.js"> </script>
+        <script src="genHair.js"> </script>
+    </body>
 </html>
