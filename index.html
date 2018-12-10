@@ -9,7 +9,7 @@
     <body onload="generate()">
         <h1>Character Generator!</h1>
 
-        <p>Species <button onclick="ranArray(species)">Refresh</button></p>
+        <p>Species <button onclick="ranArray('species')">Refresh</button></p>
         <a href="#" target="_blank" id="speciesDisplay"></a>
 
         <p>Number of Colors!</p>
@@ -19,7 +19,7 @@
         <br><br><br><br>
         <p>*Click on a color or bar to change it!</p>
 
-        <p>Jobs! <button onclick="ranArray(job)">Refresh</button></p>
+        <p>Jobs! <button onclick="ranArray('job')">Refresh</button></p>
         <div class="jobDisplay" id="jobDisplay"></div><br>
 
         <div id="barContainer">
@@ -51,7 +51,7 @@
 
 
             <div id="hairStyle">
-                <p>Hair Style! <button onclick="ranArray(hair)">Refresh</button></p>
+                <p>Hair Style! <button onclick="ranArray('hair')">Refresh</button></p>
                 <div class="hairDisplay" id="hairDisplay"></div>
 
                 <p id="hairText"></p>
@@ -63,8 +63,6 @@
         <br>
         <button onclick="generate()">Refresh All</button>
         <script src="javascript.js"></script>
-        <script src="genJob.js"> </script>
-        <script src="genSpecies.js"> </script>
-        <script src="genHair.js"> </script>
+        <script src="attributes.js"></script>
     </body>
 </html>

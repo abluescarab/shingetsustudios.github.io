@@ -1,15 +1,15 @@
 var colorBox = document.querySelector("#colorBox");
 
 function ranArray(arrayName) {
-    var ranArNum = Math.floor(Math.random() * (arrayName.length) + 1);
-    var displayText = document.getElementById(arrayName[0] + 'Display');
+    var ranArNum = Math.floor(Math.random() * (attributes[arrayName].length) + 1);
+    var displayText = document.getElementById(arrayName + 'Display');
 
-    if (arrayName[0] == "species") {
-        var myUrl = "https://www.google.com/search?hl=en&site=imghp&tbm=isch&source=hp&biw=950&bih=970&q=" + arrayName[ranArNum];
+    if (arrayName == "species") {
+        var myUrl = "https://www.google.com/search?tbm=isch&q=" + attributes[arrayName][ranArNum];
         displayText.href = myUrl;
     }
 
-    displayText.innerHTML = arrayName[ranArNum];
+    displayText.innerHTML = attributes[arrayName][ranArNum];
 }
 
 function barGen(divName, backColor, progColor, var1, var2) {
@@ -97,13 +97,13 @@ function generate() {
     genColorBox(1);
     randomColor(1);
     colorReset();
-    ranArray(job);
-    ranArray(species);
+    ranArray("job");
+    ranArray("species");
     newGender();
     newHeight();
     newWeight();
     newStrength();
     newEndowment();
     newHairLength();
-    ranArray(hair);
+    ranArray("hair");
 }
