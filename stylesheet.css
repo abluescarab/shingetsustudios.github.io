@@ -42,7 +42,7 @@ header {
     width: 0;
     height: 30px;
 }
-#genderText, #heightText, #weightText, #strengthText, #endowmentText {
+#genderText, #heightText, #weightText, #strengthText, #endowmentText, #hairText {
     position: absolute;
     line-height: 0px;
     padding-left: 110px;
