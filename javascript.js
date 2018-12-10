@@ -1,5 +1,3 @@
-var colorBox = document.querySelector("#colorBox");
-
 function ranArray(arrayName) {
     var ranArNum = Math.floor(Math.random() * (attributes[arrayName].length) + 1);
     var displayText = document.getElementById(arrayName + 'Display');
