@@ -14,15 +14,15 @@ header {
 .colorBox {
     width: 70px;
     height: 70px;
-    display: inline-block;
-    margin: 0px;
+    float: left;
+    margin: 1px;
     border-width: 1px;
     border-style: solid;
 }
 .colorBoxContainer {
     height: auto;
     float: left;
-    max-width: 66%;
+    width: 100%;
 }
 .colorList {
     float: left;
