@@ -32,14 +32,11 @@ function barGen(divName, backColor, progColor, var1, var2) {
 }
 
 function genColorBox(num) {
-    var cList = '<li class = "colorList"> ';
-    var cBox = '<div id = "colorBox' + num + '" onclick="randomColor(' + num + ');"';
-    var cClass = 'class = "colorBox">';
-    var cName = '<p id="colorName' + num + '"></p>';
-    var cButton = '</div>';
-    var closeList = ' </li>';
-    var appendBox = cList + cBox + cClass + cName + cButton + closeList;
-    $("#colorBoxContainer").append(appendBox);
+    var elem = document.createElement("li");
+    elem.className = "colorList";
+    elem.innerHTML = '<div class="colorBox" id="colorBox' + num + '" onclick="randomColor(' + num + ');"></div>';
+
+    document.getElementById("colorBoxContainer").appendChild(elem);
 }
 
 function randomColor(num) {
