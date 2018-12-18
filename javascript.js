@@ -11,9 +11,9 @@ function ranArray(arrayName) {
 }
 
 function barGen(divName, backColor, progColor, var1, var2) {
-    var elem = document.getElementById(divName + "2");
+    var innerBar = document.getElementById(divName + "Inner");
     var percent = Math.floor(Math.random() * 100);
-    elem.style.width = percent + '%';
+    innerBar.style.width = percent + '%';
     $("#" + divName + "1").css('background-color', backColor);
     $("#" + divName + "2").css('background-color', progColor);
 
