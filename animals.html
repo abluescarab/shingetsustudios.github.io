@@ -5,63 +5,63 @@
         <title>Animal Character Generator</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
-    <body onload="generate()">
+    <body>
         <div id="container">
             <header>
                 <h1>Character Generator!</h1>
             </header>
 
             <div id="left">
-                <p>Species <button onclick="generateFromArray('species')">Refresh</button></p>
+                <p>Species <button id="generate-species">Refresh</button></p>
                 <a href="#" target="_blank" id="species-display"></a>
 
                 <p>Number of Colors!</p>
-                <p><input type="number" id="color-count" min="1" value="1"><button onclick="resetColors()">Gen Colors!</button></p>
+                <p><input type="number" id="color-count" min="1" value="1"><button id="generate-colors">Gen Colors!</button></p>
                 <div id="color-box-container"></div>
                 <p>*Click on a color or bar to change it!</p>
 
-                <p>Jobs! <button onclick="generateFromArray('job')">Refresh</button></p>
+                <p>Jobs! <button id="generate-job">Refresh</button></p>
                 <div class="job-display" id="job-display"></div>
             </div>
 
             <div id="right">
                 <div class="bar-container">
-                    <div class="progress-bar" id="gender-outer" onclick="newGender()">
+                    <div class="progress-bar" id="gender-outer">
                         <div class="bar" id="gender-inner"></div>
                     </div>
                     <p id="gender-text" class="result"></p>
                 </div>
 
                 <div class="bar-container">
-                    <div class="progress-bar" id="height-outer" onclick="newHeight()">
+                    <div class="progress-bar" id="height-outer">
                         <div class="bar" id="height-inner"></div>
                     </div>
                     <p id="height-text" class="result"></p>
                 </div>
 
                 <div class="bar-container">
-                    <div class="progress-bar" id="weight-outer" onclick="newWeight()">
+                    <div class="progress-bar" id="weight-outer">
                         <div class="bar" id="weight-inner"></div>
                     </div>
                     <p id="weight-text" class="result"></p>
                 </div>
 
                 <div class="bar-container">
-                    <div class="progress-bar" id="strength-outer" onclick="newStrength()">
+                    <div class="progress-bar" id="strength-outer">
                         <div class="bar" id="strength-inner"></div>
                     </div>
                     <p id="strength-text" class="result"></p>
                 </div>
 
                 <div class="bar-container">
-                    <div class="progress-bar" id="endowment-outer" onclick="newEndowment()">
+                    <div class="progress-bar" id="endowment-outer">
                         <div class="bar" id="endowment-inner"></div>
                     </div>
                     <p id="endowment-text" class="result"></p>
                 </div>
 
                 <div class="bar-container">
-                    <p>Hair Style! <button onclick="generateFromArray('hair')">Refresh</button></p>
+                    <p>Hair Style! <button id="generate-hair">Refresh</button></p>
                     <div class="hair-display" id="hair-display"></div>
 
                     <div class="progress-bar" id="hair-outer" onclick="newHairLength()">
@@ -76,5 +76,51 @@
 
         <script src="javascript.js"></script>
         <script src="attributes.js"></script>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                generate();
+            }, false);
+
+            document.getElementById("generate-species").addEventListener("click", function () {
+                generateFromArray("species");
+            }, false);
+
+            document.getElementById("generate-colors").addEventListener("click", function () {
+                resetColors();
+            }, false);
+
+            document.getElementById("generate-job").addEventListener("click", function () {
+                generateFromArray("job");
+            }, false);
+
+            document.getElementById("gender-outer").addEventListener("click", function () {
+                newGender();
+            }, false);
+
+            document.getElementById("height-outer").addEventListener("click", function () {
+                newHeight();
+            }, false);
+
+            document.getElementById("weight-outer").addEventListener("click", function () {
+                newWeight();
+            }, false);
+
+            document.getElementById("strength-outer").addEventListener("click", function () {
+                newStrength();
+            }, false);
+
+            document.getElementById("endowment-outer").addEventListener("click", function () {
+                newEndowment();
+            }, false);
+
+            document.getElementById("generate-hair").addEventListener("click", function () {
+                generateFromArray("hair");
+            }, false);
+
+            document.getElementById("hair-outer").addEventListener("click", function () {
+                newHairLength();
+            }, false);
+        </script>
     </body>
 </html>
