@@ -23,6 +23,8 @@ header {
     height: auto;
     float: left;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .colorList {
     float: left;
