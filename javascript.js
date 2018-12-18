@@ -42,9 +42,8 @@ function genColorBox(num) {
 function randomColor(num) {
     var randColor = Math.floor(Math.random() * (256 * 256 * 256 - 1));
     var randColorHex = "#" + randColor.toString(16);
-    var boxId = "#colorName" + num.toString();
-    var boxDiv = "#colorBox" + num.toString();
-    $(boxDiv).css("background-color", randColorHex);
+
+    document.getElementById("colorBox" + num.toString()).style.backgroundColor = randColorHex;
 }
 
 function colorReset() {
