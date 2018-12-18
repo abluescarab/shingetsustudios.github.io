@@ -14,8 +14,9 @@ function barGen(divName, backColor, progColor, var1, var2) {
     var innerBar = document.getElementById(divName + "Inner");
     var percent = Math.floor(Math.random() * 100);
     innerBar.style.width = percent + '%';
-    $("#" + divName + "1").css('background-color', backColor);
-    $("#" + divName + "2").css('background-color', progColor);
+    innerBar.style.backgroundColor = progColor;
+
+    document.getElementById(divName + "Outer").style.backgroundColor = backColor;
 
     if (divName == "endowment") {
         greeting = percent.toString() + "% " + var1;
