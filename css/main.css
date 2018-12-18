@@ -7,14 +7,14 @@ header {
     text-align: center;
 }
 
-#container {
+.container {
     margin: 0 auto;
     width: 800px;
     background-color: #fff;
     overflow: hidden;
     padding: 40px;
 }
-#left, #right {
+.left, .right {
     float: left;
     width: 400px;
 }
