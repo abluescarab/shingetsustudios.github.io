@@ -39,7 +39,7 @@ function genColorBox(num) {
     var cButton = '</div>';
     var closeList = ' </li>';
     var appendBox = cList + cBox + cClass + cName + cButton + closeList;
-    $(".colorBoxContainer").append(appendBox);
+    $("#colorBoxContainer").append(appendBox);
 }
 
 function randomColor(num) {
