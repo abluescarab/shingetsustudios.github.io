@@ -1,6 +1,6 @@
 function generateFromArray(arrayName) {
     var index = Math.floor(Math.random() * (attributes[arrayName].length) + 1);
-    var displayText = document.getElementById(arrayName + 'Display');
+    var displayText = document.getElementById(arrayName + '-display');
 
     if (arrayName == "species") {
         var myUrl = "https://www.google.com/search?tbm=isch&q=" + attributes[arrayName][index];
@@ -11,12 +11,12 @@ function generateFromArray(arrayName) {
 }
 
 function calculateProgressBar(divName, backColor, progColor, moreThanHalf, lessThanHalf) {
-    var innerBar = document.getElementById(divName + "Inner");
+    var innerBar = document.getElementById(divName + "-inner");
     var percent = Math.floor(Math.random() * 100);
     innerBar.style.width = percent + '%';
     innerBar.style.backgroundColor = progColor;
 
-    document.getElementById(divName + "Outer").style.backgroundColor = backColor;
+    document.getElementById(divName + "-outer").style.backgroundColor = backColor;
 
     if (divName == "endowment") {
         greeting = percent.toString() + "% " + moreThanHalf;
@@ -28,33 +28,33 @@ function calculateProgressBar(divName, backColor, progColor, moreThanHalf, lessT
         greeting = percent.toString() + "% " + moreThanHalf + "/" + lessThanHalf;
     }
 
-    document.getElementById(divName + "Text").innerHTML = greeting;
+    document.getElementById(divName + "-text").innerHTML = greeting;
 }
 
 function createColorBox(num) {
     var elem = document.createElement("div");
-    elem.className = "colorBox";
-    elem.id = "colorBox" + num;
+    elem.className = "color-box";
+    elem.id = "color-box-" + num;
     elem.setAttribute("onclick", "randomColor(" + num + ")");
 
-    document.getElementById("colorBoxContainer").appendChild(elem);
+    document.getElementById("color-box-container").appendChild(elem);
 }
 
 function randomColor(num) {
     var randColor = Math.floor(Math.random() * (256 * 256 * 256 - 1));
     var randColorHex = "#" + randColor.toString(16);
 
-    document.getElementById("colorBox" + num.toString()).style.backgroundColor = randColorHex;
+    document.getElementById("color-box-" + num.toString()).style.backgroundColor = randColorHex;
 }
 
 function resetColors() {
-    var colorBoxes = document.getElementsByClassName("colorBox");
+    var colorBoxes = document.getElementsByClassName("color-box");
 
     while(colorBoxes[0]) {
         colorBoxes[0].parentNode.removeChild(colorBoxes[0]);
     }
 
-    var count = document.getElementById("colorNum").value;
+    var count = document.getElementById("color-count").value;
 
     for (i = 1; i - 1 < count; i++) {
         createColorBox(i);

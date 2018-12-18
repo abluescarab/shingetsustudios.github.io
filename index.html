@@ -3,7 +3,7 @@
     <head>
         <meta content="text/html; charset=windows-1252" http-equiv="content-type">
         <title>Character Generator</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body onload="generate()">
@@ -14,65 +14,65 @@
 
             <div id="left">
                 <p>Species <button onclick="generateFromArray('species')">Refresh</button></p>
-                <a href="#" target="_blank" id="speciesDisplay"></a>
+                <a href="#" target="_blank" id="species-display"></a>
 
                 <p>Number of Colors!</p>
-                <p><input type="number" id="colorNum" min="1" value="1"><button onclick="resetColors()">Gen Colors!</button></p>
-                <div id="colorBoxContainer"></div>
+                <p><input type="number" id="color-count" min="1" value="1"><button onclick="resetColors()">Gen Colors!</button></p>
+                <div id="color-box-container"></div>
                 <p>*Click on a color or bar to change it!</p>
 
                 <p>Jobs! <button onclick="generateFromArray('job')">Refresh</button></p>
-                <div class="jobDisplay" id="jobDisplay"></div>
+                <div class="job-display" id="job-display"></div>
             </div>
 
             <div id="right">
-                <div class="barContainer">
-                    <div class="progressBar" id="genderOuter" onclick="newGender()">
-                        <div class="bar" id="genderInner"></div>
+                <div class="bar-container">
+                    <div class="progress-bar" id="gender-outer" onclick="newGender()">
+                        <div class="bar" id="gender-inner"></div>
                     </div>
-                    <p id="genderText" class="result"></p>
+                    <p id="gender-text" class="result"></p>
                 </div>
 
-                <div class="barContainer">
-                    <div class="progressBar" id="heightOuter" onclick="newHeight()">
-                        <div class="bar" id="heightInner"></div>
+                <div class="bar-container">
+                    <div class="progress-bar" id="height-outer" onclick="newHeight()">
+                        <div class="bar" id="height-inner"></div>
                     </div>
-                    <p id="heightText" class="result"></p>
+                    <p id="height-text" class="result"></p>
                 </div>
 
-                <div class="barContainer">
-                    <div class="progressBar" id="weightOuter" onclick="newWeight()">
-                        <div class="bar" id="weightInner"></div>
+                <div class="bar-container">
+                    <div class="progress-bar" id="weight-outer" onclick="newWeight()">
+                        <div class="bar" id="weight-inner"></div>
                     </div>
-                    <p id="weightText" class="result"></p>
+                    <p id="weight-text" class="result"></p>
                 </div>
 
-                <div class="barContainer">
-                    <div class="progressBar" id="strengthOuter" onclick="newStrength()">
-                        <div class="bar" id="strengthInner"></div>
+                <div class="bar-container">
+                    <div class="progress-bar" id="strength-outer" onclick="newStrength()">
+                        <div class="bar" id="strength-inner"></div>
                     </div>
-                    <p id="strengthText" class="result"></p>
+                    <p id="strength-text" class="result"></p>
                 </div>
 
-                <div class="barContainer">
-                    <div class="progressBar" id="endowmentOuter" onclick="newEndowment()">
-                        <div class="bar" id="endowmentInner"></div>
+                <div class="bar-container">
+                    <div class="progress-bar" id="endowment-outer" onclick="newEndowment()">
+                        <div class="bar" id="endowment-inner"></div>
                     </div>
-                    <p id="endowmentText" class="result"></p>
+                    <p id="endowment-text" class="result"></p>
                 </div>
 
-                <div class="barContainer">
+                <div class="bar-container">
                     <p>Hair Style! <button onclick="generateFromArray('hair')">Refresh</button></p>
-                    <div class="hairDisplay" id="hairDisplay"></div>
+                    <div class="hair-display" id="hair-display"></div>
 
-                    <div class="progressBar" id="hairOuter" onclick="newHairLength()">
-                        <div class="bar" id="hairInner"></div>
+                    <div class="progress-bar" id="hair-outer" onclick="newHairLength()">
+                        <div class="bar" id="hair-inner"></div>
                     </div>
-                    <p id="hairText" class="result"></p>
+                    <p id="hair-text" class="result"></p>
                 </div>
             </div>
 
-            <button onclick="generate()" id="refreshAll">Refresh All</button>
+            <button onclick="generate()" id="refresh-all">Refresh All</button>
         </div>
 
         <script src="javascript.js"></script>
