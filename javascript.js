@@ -48,11 +48,15 @@ function randomColor(num) {
 }
 
 function colorReset() {
-    $('.colorBox').remove();
-    $('.colorButton').remove();
-    $('.colorList').remove();
-    myNumber = document.getElementById("colorNum").value;
-    for (i = 1; i - 1 < myNumber; i++) {
+    var colorBoxes = document.getElementsByClassName("colorBox");
+
+    while(colorBoxes[0]) {
+        colorBoxes[0].parentNode.removeChild(colorBoxes[0]);
+    }
+
+    var count = document.getElementById("colorNum").value;
+
+    for (i = 1; i - 1 < count; i++) {
         genColorBox(i);
         randomColor(i);
     }
