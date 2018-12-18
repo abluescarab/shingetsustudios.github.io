@@ -1,13 +1,13 @@
 function ranArray(arrayName) {
-    var ranArNum = Math.floor(Math.random() * (attributes[arrayName].length) + 1);
+    var index = Math.floor(Math.random() * (attributes[arrayName].length) + 1);
     var displayText = document.getElementById(arrayName + 'Display');
 
     if (arrayName == "species") {
-        var myUrl = "https://www.google.com/search?tbm=isch&q=" + attributes[arrayName][ranArNum];
+        var myUrl = "https://www.google.com/search?tbm=isch&q=" + attributes[arrayName][index];
         displayText.href = myUrl;
     }
 
-    displayText.innerHTML = attributes[arrayName][ranArNum];
+    displayText.innerHTML = attributes[arrayName][index];
 }
 
 function barGen(divName, backColor, progColor, var1, var2) {
