@@ -32,9 +32,10 @@ function barGen(divName, backColor, progColor, var1, var2) {
 }
 
 function genColorBox(num) {
-    var elem = document.createElement("li");
-    elem.className = "colorList";
-    elem.innerHTML = '<div class="colorBox" id="colorBox' + num + '" onclick="randomColor(' + num + ');"></div>';
+    var elem = document.createElement("div");
+    elem.className = "colorBox";
+    elem.id = "colorBox" + num;
+    elem.setAttribute("onclick", "randomColor(" + num + ")");
 
     document.getElementById("colorBoxContainer").appendChild(elem);
 }

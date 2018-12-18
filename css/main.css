@@ -26,15 +26,6 @@ header {
     margin: 0;
     padding: 0;
 }
-.colorList {
-    float: left;
-    list-style-type: none;
-    padding: 0px;
-}
-#colorName {
-    position: absolute;
-    line-height: 0px;
-}
 
 .barContainer {
     float: left;
