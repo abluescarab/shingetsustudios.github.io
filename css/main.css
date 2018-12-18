@@ -34,18 +34,25 @@ header {
     line-height: 0px;
 }
 
+.barContainer {
+    float: left;
+    clear: both;
+    margin-bottom: 5px;
+}
 .progressBar {
     width: 100px;
     height: 30px;
+    float: left;
+    margin-right: 5px;
 }
 .bar {
     width: 0;
     height: 30px;
 }
 .result {
-    position: absolute;
-    line-height: 0px;
-    padding-left: 110px;
+    float: left;
+    line-height: 30px;
+    margin: 0;
 }
 
 #refreshAll {
