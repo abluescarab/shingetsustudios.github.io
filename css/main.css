@@ -58,15 +58,15 @@ h6 {
   margin: 8px;
 }
 
-.card > p {
+.card > div {
   padding: 0 24px 16px 24px;
 }
 
-.card > p:first-of-type {
+.card > div:first-of-type {
   padding-top: 24px;
 }
 
-.card > p:last-of-type {
+.card > div:last-of-type {
   padding-bottom: 0;
 }
 
@@ -76,7 +76,7 @@ h6 {
   letter-spacing: 0.5pt;
 }
 
-.card > p:not(.card-title) {
+.card > div:not(.card-title) {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.25pt;
