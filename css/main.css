@@ -138,6 +138,55 @@ h6 {
   background: none;
 }
 
+.card-content input {
+  font: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #949494;
+  padding: 4px 0;
+  margin-bottom: 16px;
+}
+
+.wide-card {
+  clear: both;
+  width: calc(100% - 16px);
+  width: calc(100% - 8px * 2);
+}
+
+.wide-card > button {
+  float: left;
+}
+
+#color-box-container {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: -4px;
+}
+
+.color-box-display {
+  float: left;
+  margin: 4px;
+}
+
+.color-box {
+  width: 60px;
+  height: 60px;
+  float: left;
+  display: block;
+  background-color: black;
+}
+
+.color-text {
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4pt;
+  clear: both;
+  float: left;
+}
+
 #container {
   height: 100%;
 }
