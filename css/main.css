@@ -50,17 +50,24 @@ h6 {
   letter-spacing: 0.15pt;
 }
 
-.card > * {
-  padding: 8px;
-}
-
 .card {
   background-color: white;
   float: left;
-  padding: 16px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin: 8px;
+}
+
+.card > p {
+  padding: 0 24px 16px 24px;
+}
+
+.card > p:first-of-type {
+  padding-top: 24px;
+}
+
+.card > p:last-of-type {
+  padding-bottom: 0;
 }
 
 .card-title {
@@ -90,8 +97,16 @@ h6 {
   font-weight: 500;
   border-radius: 4px;
   float: right;
-  margin: 0;
-  padding: 8px 16px;
+  margin: 8px 16px;
+  padding: 8px;
+}
+
+.card-button:first-child {
+  margin-left: 0;
+}
+
+.card-button:last-child {
+  margin-right: 0;
 }
 
 .card-button:enabled {
