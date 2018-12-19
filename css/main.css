@@ -101,11 +101,11 @@ h6 {
   padding: 8px;
 }
 
-.card-button:first-child {
+.card-button:first-of-type:not(:only-of-type) {
   margin-left: 0;
 }
 
-.card-button:last-child {
+.card-button:last-of-type:not(:only-of-type) {
   margin-right: 0;
 }
 
