@@ -14,53 +14,53 @@
 
         <div id="content-container">
             <div id="content">
-                <div class="card">
+                <div class="card" id="race-card">
                     <div class="card-title"><p>Race</p></div>
-                    <div class="card-content"><p>You are a(n) <a href="#" target="_blank">race</a>.</p></div>
-                    <button class="card-button">Animal</button>
-                    <button class="card-button">Humanoid</button>
+                    <div class="card-content"><p>You are a(n) <a href="#" target="_blank">{0}</a>.</p></div>
+                    <button class="card-button" id="race-humanoid">Humanoid</button>
+                    <button class="card-button" id="race-animal">Animal</button>
                 </div>
-                <div class="card">
+                <div class="card" id="gender-card">
                     <div class="card-title"><p>Gender</p></div>
-                    <div class="card-content"><p>You express yourself as 50% masculine/feminine.</p></div>
-                    <button class="card-button">Reroll</button>
+                    <div class="card-content"><p>You express yourself as {0}% {1}.</p></div>
+                    <button class="card-button" id="gender-reroll">Reroll</button>
                 </div>
-                <div class="card">
+                <div class="card" id="height-card">
                     <div class="card-title"><p>Height</p></div>
-                    <div class="card-content"><p>You are x'y" tall.</p></div>
-                    <button class="card-button">Reroll</button>
+                    <div class="card-content"><p>You are {0}'{1}" tall.</p></div>
+                    <button class="card-button" id="height-reroll">Reroll</button>
                 </div>
-                <div class="card">
+                <div class="card" id="weight-card">
                     <div class="card-title"><p>Weight</p></div>
-                    <div class="card-content"><p>You weigh x lbs (y kg).</p></div>
-                    <button class="card-button">Reroll</button>
+                    <div class="card-content"><p>You weigh {0} lbs ({1} kg).</p></div>
+                    <button class="card-button" id="weight-reroll">Reroll</button>
                 </div>
-                <div class="card">
+                <div class="card" id="strength-card">
                     <div class="card-title"><p>Strength</p></div>
-                    <div class="card-content"><p>You are 50% weak/strong.</p></div>
-                    <button class="card-button">Reroll</button>
+                    <div class="card-content"><p>You are {0}% {1}.</p></div>
+                    <button class="card-button" id="strength-reroll">Reroll</button>
                 </div>
-                <div class="card">
+                <div class="card" id="hair-card">
                     <div class="card-title"><p>Hair</p></div>
-                    <div class="card-content"><p>Your hair is x'y" long and in a(n) <a href="#" target="_blank">hairstyle</a> style.</p></div>
-                    <button class="card-button">Length</button>
-                    <button class="card-button">Style</button>
+                    <div class="card-content"><p>Your hair is {0}'{1}" long and in a(n) <a href="#" target="_blank">{2}</a> style.</p></div>
+                    <button class="card-button" id="hair-style">Style</button>
+                    <button class="card-button" id="hair-length">Length</button>
                 </div>
-                <div class="card">
+                <div class="card" id="endowment-card">
                     <div class="card-title"><p>Endowment 😏</p></div>
-                    <div class="card-content"><p>You are 50% unendowed/well-endowed.</p></div>
-                    <button class="card-button">Reroll</button>
+                    <div class="card-content"><p>You are {0}% {1}.</p></div>
+                    <button class="card-button" id="endowment-reroll">Reroll</button>
                 </div>
-                <div class="card">
+                <div class="card" id="job-card">
                     <div class="card-title"><p>Job</p></div>
-                    <div class="card-content"><p>You work as a(n) <a href="#" target="_blank">job</a>.</p></div>
-                    <button class="card-button">Include Furry</button>
-                    <button class="card-button">Exclude Furry</button>
+                    <div class="card-content"><p>You work as a(n) <a href="#" target="_blank">{0}</a>.</p></div>
+                    <button class="card-button" id="job-exclude">Exclude Furry</button>
+                    <button class="card-button" id="job-include">Include Furry</button>
                 </div>
-                <div class="card wide-card">
+                <div class="card wide-card" id="color-scheme-card">
                     <div class="card-title"><p>Color Scheme</p></div>
                     <div class="card-content">
-                        <p><input type="number" min="1" placeholder="Color Count"/></p>
+                        <p><input id="color-box-count" type="number" min="1" placeholder="Color Count"/></p>
                         <div id="color-box-container">
                             <div class="color-box-display">
                                 <div class="color-box" id="color-box-1"></div>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="card-button">Reroll</button>
+                    <button class="card-button" id="color-scheme-reroll">Reroll</button>
                 </div>
             </div>
         </div>
