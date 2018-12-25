@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     generate();
 }, false);
 
+document.getElementById("refresh").addEventListener("click", function() {
+    generate();
+});
+
 document.getElementById("race-humanoid").addEventListener("click", function() {
     rerollRaceHumanoid();
 }, false);

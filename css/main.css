@@ -197,6 +197,14 @@ button:enabled {
   float: left;
 }
 
+#refresh {
+  width: 24px;
+  height: 24px;
+  background: url("../images/baseline-refresh-24px.svg");
+  float: right;
+  margin: 40px;
+}
+
 #container {
   height: 100%;
 }
