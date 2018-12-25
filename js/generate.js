@@ -134,7 +134,7 @@ function rerollHair(style = true, length = true) {
 
     if(style === true || styleRegex === null) {
         var styleResult = randomArrayValueWithURL(hairStyles);
-        styleText = '<a href="' + styleResult[0].replace(" ", "+") + ' ">' + styleResult[1] + '</a>';
+        styleText = '<a href="' + styleResult[0] + '" target="_blank">' + styleResult[1] + '</a>';
     }
     else {
         styleText = styleRegex[0];
@@ -193,5 +193,5 @@ function random(min, max) {
 }
 
 function getURL(search) {
-    return "https://www.google.com/search?tbm=isch&q=" + search;
+    return "https://www.google.com/search?tbm=isch&q=" + search.replace(" ", "+");
 }
