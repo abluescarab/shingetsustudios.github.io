@@ -50,6 +50,24 @@ h6 {
   letter-spacing: 0.15pt;
 }
 
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  font-size: 14px;
+  letter-spacing: 0.5pt;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
 .card {
   background-color: white;
   float: left;
@@ -87,21 +105,10 @@ h6 {
 }
 
 .card-button {
-  background: none;
-  border: none;
-  font: inherit;
   text-transform: uppercase;
-  outline: inherit;
-  font-size: 14px;
-  letter-spacing: 0.5pt;
-  font-weight: 500;
   border-radius: 4px;
   margin: 8px 16px;
   padding: 8px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .card-button:first-of-type:not(:only-of-type) {
@@ -114,7 +121,6 @@ h6 {
 
 .card-button:enabled {
   color: #bf360c;
-  cursor: pointer;
 }
 
 .card-button:disabled {
