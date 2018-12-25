@@ -181,6 +181,7 @@ h6 {
 }
 
 .color-text {
+  font-family: monospace;
   width: 60px;
   text-align: center;
   font-size: 12px;
